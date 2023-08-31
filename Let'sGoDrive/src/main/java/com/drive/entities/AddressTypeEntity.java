@@ -23,6 +23,7 @@ import lombok.ToString;
 @Table(name = "ADDRESS_TYPE")
 public class AddressTypeEntity {
 
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "ADDRESS_TYPE_ID", unique = true, nullable = false)

@@ -24,6 +24,7 @@ import lombok.ToString;
 @Table(name = "BOOKING_STATUS")
 public class BookingStatusEntity implements Serializable {
 
+	
 	private static final long serialVersionUID = 1L;
 
 	@Id

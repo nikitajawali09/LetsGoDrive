@@ -26,6 +26,7 @@ import lombok.ToString;
 @Table(name = "DRIVER_DTLS")
 public class DriverEntity implements Serializable {
 
+	
 	private static final long serialVersionUID = 1L;
 
 	@Id

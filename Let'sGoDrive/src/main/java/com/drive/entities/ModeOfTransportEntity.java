@@ -24,6 +24,7 @@ import lombok.ToString;
 @Table(name = "MODE_OF_TRANSPORT")
 public class ModeOfTransportEntity implements Serializable {
 
+	
 	private static final long serialVersionUID = 1L;
 
 	@Id

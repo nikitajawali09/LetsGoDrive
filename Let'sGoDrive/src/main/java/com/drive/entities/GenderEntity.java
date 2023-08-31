@@ -23,6 +23,7 @@ import lombok.ToString;
 @Table(name = "M_GENDER")
 public class GenderEntity {
 
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "GENDER_ID", unique = true, nullable = false)

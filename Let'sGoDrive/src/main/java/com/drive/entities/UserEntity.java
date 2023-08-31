@@ -26,6 +26,7 @@ import lombok.ToString;
 @Table(name = "USER_DTLS")
 public class UserEntity implements Serializable {
 
+	
 	private static final long serialVersionUID = 1L;
 
 	@Id
