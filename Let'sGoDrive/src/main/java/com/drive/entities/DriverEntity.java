@@ -90,7 +90,7 @@ public class DriverEntity implements Serializable {
 	private Long totalExperienceInMonth;
 
 	@Column(name = "IS_DRIVER_VERIFIED")
-	private boolean isDriverVerified;
+	private boolean isDriverVerified;//phone no and email id || sms
 
 	@Column(name = "DRIVING_LICENSE_NO")
 	private Long drivingLicenseNo;
@@ -102,5 +102,17 @@ public class DriverEntity implements Serializable {
 	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy")
 	@Column(name = "DRIVING_EXPIRY_DATE")
 	private Date drivingExpiryDate;
+	
+	@Column(name="IS_DRIVER_DOC_VERIFIED")
+	private boolean isDriverDocVerified;
+	
+	@Column(name="PASSWORD")
+	private String password;
+	
+	@Column(name="CONFIRM_PASSWORD")
+	private String confirmPassword;
+	
+	@Column(name="OLD_PASSWORD")
+	private String oldPassword;
 
 }

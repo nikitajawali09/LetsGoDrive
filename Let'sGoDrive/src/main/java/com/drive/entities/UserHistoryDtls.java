@@ -23,16 +23,15 @@ import lombok.ToString;
 @Setter
 @ToString
 @Entity
-@Table(name = "USER_DTLS")
-public class UserEntity implements Serializable {
-
+@Table(name = "USER_DTLS_HIS")
+public class UserHistoryDtls implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name = "USER_ID", unique = true, nullable = false)
-	private Long userId;
+	@Column(name = "USER_HIS_ID", unique = true, nullable = false)
+	private Long userHistoryId;
 
 	@Column(name = "FIRST_NAME", nullable = false)
 	private String firstName;
@@ -81,20 +80,7 @@ public class UserEntity implements Serializable {
 
 	@Column(name = "ADDRESS_TYPE_ID")
 	private Long addressTypeId;// office,home,communication
+
 	
-	@Column(name = "IS_USER_VERIFIED")
-	private boolean isUserVerified; //phone no and email id || sms
-	
-//	@Column(name="IS_USER_DOC_VERIFIED")
-//	private boolean isUserDocVerified;
-	
-	@Column(name="PASSWORD")
-	private String password;
-	
-	@Column(name="OLD_PASSWORD")
-	private String oldPassword;
-	
-	@Column(name="CONFIRM_PASSWORD")
-	private String confirmPassword;
 
 }
